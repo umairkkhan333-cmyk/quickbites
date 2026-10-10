@@ -1,0 +1,16 @@
+@media (max-width: 900px) {
+  .checkout-grid { grid-template-columns: 1fr; }
+}
+
+@media (max-width: 768px) {
+  .hero { grid-template-columns: 1fr; padding: 2rem 1.5rem; text-align: center; }
+  .hero-content h1 { font-size: 2rem; }
+  .hero-buttons { justify-content: center; flex-wrap: wrap; }
+  .nav-links { gap: 1rem; }
+  .section-title { font-size: 1.6rem; }
+  .cart-item { grid-template-columns: 60px 1fr; }
+  .cart-item .qty-controls, .cart-item .remove-btn { grid-column: 1 / -1; justify-self: end; }
+  .featured, .why-us, .menu-page, .cart-page, .checkout-page { padding: 2rem 1rem; }
+  .category-tabs { gap: 0.5rem; }
+  .tab { padding: 0.5rem 1rem; font-size: 0.9rem; }
+}

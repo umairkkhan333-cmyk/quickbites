@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>QuickBite - Delicious Food Delivered</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/responsive.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Inter:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+  <nav class="navbar">
+    <div class="nav-container">
+      <a href="index.html" class="logo"><i class="fas fa-utensils"></i> QuickBite</a>
+      <ul class="nav-links">
+        <li><a href="index.html" class="active">Home</a></li>
+        <li><a href="menu.html">Menu</a></li>
+        <li><a href="cart.html" class="cart-link">
+          <i class="fas fa-shopping-cart"></i>
+          <span class="cart-badge" id="cartBadge">0</span>
+        </a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <section class="hero">
+    <div class="hero-content">
+      <h1>Delicious Food, <br><span>Delivered Fast</span></h1>
+      <p>Order your favorite meals online and get them delivered hot & fresh to your doorstep.</p>
+      <div class="hero-buttons">
+        <a href="menu.html" class="btn btn-primary">Order Now</a>
+        <a href="#featured" class="btn btn-outline">View Menu</a>
+      </div>
+    </div>
+    <div class="hero-image">
+      <img src="https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?w=600" alt="Pizza">
+    </div>
+  </section>
+
+  <section class="featured" id="featured">
+    <h2 class="section-title">Featured Dishes</h2>
+    <div class="food-grid" id="featuredGrid"></div>
+  </section>
+
+  <section class="why-us">
+    <h2 class="section-title">Why Choose Us?</h2>
+    <div class="features-grid">
+      <div class="feature-card">
+        <i class="fas fa-truck-fast"></i>
+        <h3>Fast Delivery</h3>
+        <p>30 minute mein order aapke ghar</p>
+      </div>
+      <div class="feature-card">
+        <i class="fas fa-leaf"></i>
+        <h3>Fresh Ingredients</h3>
+        <p>Roz taaza saman use karte hain</p>
+      </div>
+      <div class="feature-card">
+        <i class="fas fa-star"></i>
+        <h3>Top Rated</h3>
+        <p>5000+ happy customers</p>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <p>© 2025 QuickBite. All rights reserved. | Made with ❤️</p>
+  </footer>
+
+  <script src="js/data.js"></script>
+  <script src="js/cart.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Menu - QuickBite</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/responsive.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Inter:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+  <nav class="navbar">
+    <div class="nav-container">
+      <a href="index.html" class="logo"><i class="fas fa-utensils"></i> QuickBite</a>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="menu.html" class="active">Menu</a></li>
+        <li><a href="cart.html" class="cart-link">
+          <i class="fas fa-shopping-cart"></i>
+          <span class="cart-badge" id="cartBadge">0</span>
+        </a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <section class="menu-page">
+    <h2 class="section-title">Our Menu</h2>
+
+    <div class="search-box">
+      <i class="fas fa-search"></i>
+      <input type="text" id="searchInput" placeholder="Search for dishes...">
+    </div>
+
+    <div class="category-tabs" id="categoryTabs">
+      <button class="tab active" data-cat="all">All</button>
+      <button class="tab" data-cat="pizza">Pizza</button>
+      <button class="tab" data-cat="burger">Burger</button>
+      <button class="tab" data-cat="bbq">BBQ</button>
+      <button class="tab" data-cat="drinks">Drinks</button>
+    </div>
+
+    <div class="food-grid" id="menuGrid"></div>
+    <p class="no-results" id="noResults" style="display:none;">No dishes found 😔</p>
+  </section>
+
+  <footer class="footer">
+    <p>© 2025 QuickBite. All rights reserved.</p>
+  </footer>
+
+  <script src="js/data.js"></script>
+  <script src="js/cart.js"></script>
+  <script src="js/menu.js"></script>
+</body>
+</html>
